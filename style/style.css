@@ -1,0 +1,405 @@
+html { 
+	overflow-x: hidden; 
+}
+
+body {
+	height: 100%;
+	width: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+	background-color: #D99BF3;
+	background: url("../images/fon_header.png") center no-repeat;
+	background-size: cover;
+	color: #4F4E52;
+	height: 100px;
+	position: fixed;
+	top:0;
+	width: 100%;
+	z-index: 2;
+}
+
+
+p {
+	margin: 0;
+	padding: 0;
+	color: #515151;
+	position: absolute;
+}	
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+.menu {
+	background: url("../images/menu.png") no-repeat;
+	background-size: cover;
+	height: 40px;
+	width: 40px;
+}
+
+.month {
+	height: 40px;
+	width: auto;
+}
+
+.calendar {
+	background: url("../images/icon_colendar.png") no-repeat;
+	background-size: cover;
+}
+
+.menu_circle {
+	background: url("../images/menu_circle.png") no-repeat;
+	background-size: cover;
+}
+
+.left_nav li {
+	cursor: pointer;
+	display: block;
+	float: left;
+	list-style: none;
+	margin: 10px 25px;
+}
+
+.left_nav li  p {
+	font-size: 35px;
+	position: static;
+	color: black;
+}
+
+.left_nav li:last-child{
+    height: 40px;
+	width: 150px;
+} 
+
+.left_nav li:hover {
+    background-color: #FAEAEA;
+    border: 1px solid #FAEAEA;
+    border-radius: 5px; 
+    margin: 9px 24px;
+} 
+
+.right_nav li p {
+	padding: 5px 0 0 0px;
+	position: relative;
+	top: 30%;
+	color: black;
+}
+
+.right_nav li {
+	list-style: none;
+	float: right;
+	height: 40px;
+	width: 40px;
+	margin: 10px 25px;
+	cursor: pointer;
+	text-align: center;
+}
+
+.right_nav li:hover {
+    background-color: #FAEAEA;
+    border: 1px solid #FAEAEA;
+    border-radius: 5px; 
+    margin: 9px 24px;
+} 
+
+.month p {
+	margin: 0 0 5px 0;
+}
+
+/*--------таблица и все что с ней связано--------------------*/
+.content {
+	 margin: 100px 0 0 0;
+	}
+
+.table {
+	display: table;
+	width: 100%;
+	height: 100%;
+	table-layout: auto;
+}
+
+.row_2 > div.cell_2:first-child div.cell {
+	border-bottom: none; 
+}  
+
+
+.cell {
+	display: table-cell;
+	border-bottom: 1px solid #DCD6D6;
+	border-left: 1px solid #DCD6D6; 
+	height: 50px;
+	position: relative;
+	text-align: left;
+	width: 250px;
+}
+
+.important_events {
+	height: 81px;
+}
+
+.out {
+	width: 5%;
+}
+
+.row {
+	display: table-row;
+}
+
+.out div div>div.cell {
+	text-align: right;
+}
+
+.out div div>div.cell p {
+	position: relative;
+	top: 40%;
+	padding: 0 5px 0 0;
+	font-size: small;
+}
+
+.out div.table>div:first-child p {
+	top: 150%;
+}
+
+
+.out div.table>div:first-child+div  p {
+	top: 90%;
+}
+
+.out div.table>div:first-child  {
+	height: 10.71%;
+}
+
+.out div.table>div:first-child+div  {
+	height: 5.35%;
+}
+.out div.table>div:last-child  {
+	height: 5.35%;
+}
+
+.week {
+	position: relative;
+	color: black;
+	top: 5px;
+	left: 5px;
+	font-size: small;
+}
+
+.number {
+	color: black;
+	font-size: 300%;
+	position: relative;
+	left: 5px;
+	padding: 0;
+}
+
+.event {
+	position: relative;
+	left: 5%;
+	height: 25px;
+	width: 90%;
+	background-color: #4CC3D8;
+	border-radius: 3px;
+	border: 1px solid #B5B5B5;
+	margin: 0 0 2px 0;
+	cursor: pointer;
+}
+
+.more {
+	position: relative;
+	left: 5%;
+	height: 20px; 
+	width: 90%;
+	cursor: pointer;
+}
+
+.more:hover {
+	background-color: #F8ABF3;
+	border-radius: 3px;
+}
+
+.event_birthday {
+	position: relative;
+	left: 5%;
+	height: 25px;
+	width: 90%;
+	background-color: #50E090;
+	border-radius: 3px;
+	border: 1px solid #B5B5B5;
+	margin: 0 0 2px 0;
+	cursor: pointer;
+}
+
+.event p {
+	color: #fff;
+	position: relative;
+	top: 30%;
+	left: 5%;
+}
+
+.event_birthday p {
+	color: #fff;
+	position: relative;
+	top: 30%;
+	left: 5%;
+	}
+
+.event_notout {
+	z-index: 1;
+	position: absolute;
+	left: 5%;
+	top: 1%;
+	height: 96%;
+	width: 90%;
+	background-color: #4CC3D8;
+	border-radius: 3px;
+	border: 1px solid #B5B5B5;
+	margin: 0 0 5px 0;
+	cursor: pointer;
+}
+
+.event_notout p {
+	color: #fff;
+	position: relative;
+	top: 5%;
+	left: 5%;
+}
+
+.more p {
+	color: #777676;
+	position: relative;
+	top: 5%;
+	left: 5%;
+}
+
+#add {
+	z-index: 2;
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	bottom: 5%;
+	right: 5%;
+    background: url("../images/add.png") no-repeat;
+	background-size: cover;
+	cursor: pointer;
+}	
+
+#add:hover{
+	background: url("../images/add_2.png") no-repeat;
+	background-size: cover;
+}
+
+
+
+/*-------------------------------------------------------*/
+@media screen and (orientation: portrait) { 
+
+
+
+	.out {
+		display: none;
+	}
+
+	.more {
+		display: none !important;
+	}
+   
+    .content {
+    	display: block;
+    	margin: 100px 0 0 0;
+    }
+
+	.table {
+		display: table;
+		width: 100%;
+		height: 100%;
+		table-layout: auto;
+		}
+
+	.row_2 {
+		display: table-row;
+		border: 1px solid #FAEAEA;
+	}
+
+	.table>div.row_2>div.cell_2:first-child {
+		display: table-cell;
+		width: 100px;
+		height: 15%;
+	}
+
+	.table>div.row_2>div.cell_2:last-child {
+		display: table-cell;
+		width: 85%;
+		height: 100px;
+	}
+
+	.table>div.row_2>div.cell_2:first-child div.row {
+		display: table-row;
+	}	
+
+	.table>div.row_2>div.cell_2:first-child div.cell {
+		display: table-cell;
+		width: 100%;
+		height: 100%;
+	}
+	
+	.table_2 {
+		display: table;
+		padding: 10px 0;
+		width: 100%;
+		height: 100%;
+		table-layout: fixed;
+	}
+
+    .mob div.cell {
+		display: inline;
+		border: none;
+	}
+
+	.mob div.cell>div p {
+		font-size: 180%;
+	}
+
+	.mob div.cell>div {
+		display: block;
+		width: 100%;
+		top: 0 !important;
+		float: none;
+		position: static;
+	}
+
+	.event_birthday {
+		display: block;
+		height: 50px !important;
+		background-color: #3BFF7C;
+		border-radius: 3px;
+		border: 1px solid #B5B5B5;
+		
+	}	
+	
+	.event {
+		height: 50px !important;
+		background-color: #0CB0FD;
+		border-radius: 3px;
+		border: 1px solid #B5B5B5;
+		
+	}
+
+	.event_notout {
+		height: 100px !important;
+		background: url("../images/event_notout.png") center center no-repeat;
+		background-size: cover;
+		border-radius: 3px;
+		border: 1px solid #B5B5B5;
+	}
+
+
+	#add {
+		width: 100px;
+		height: 100px;
+		bottom: 10%;
+		right: 10%;
+	}
+}
