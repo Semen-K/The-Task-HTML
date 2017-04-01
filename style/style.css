@@ -3,8 +3,6 @@ html {
 }
 
 body {
-	height: 100%;
-	width: 100%;
 	font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -24,8 +22,6 @@ header {
 p {
 	margin: 0;
 	padding: 0;
-	color: #515151;
-	position: absolute;
 }	
 
 ul {
@@ -116,36 +112,38 @@ ul {
 
 .table {
 	display: table;
-	width: 100%;
-	height: 100%;
 	table-layout: auto;
+	padding: 0;
+	margin: 0;	
 }
 
-.row_2 > div.cell_2:first-child div.cell {
-	border-bottom: none; 
-}  
-
+.row {
+	display: table-row;
+}
 
 .cell {
 	display: table-cell;
 	border-bottom: 1px solid #DCD6D6;
 	border-left: 1px solid #DCD6D6; 
-	height: 50px;
 	position: relative;
 	text-align: left;
 	width: 250px;
 }
 
-.important_events {
-	height: 81px;
+
+.dey div.cell_2:first-child div.cell {
+	border-bottom: none; 
+	height: 80px;
+	border-bottom: none; 	
 }
 
+.dey div.cell_2 div.cell {
+	height: 79px;	
+} 
+
+/* ------------------------------------- */
 .out {
-	width: 5%;
-}
-
-.row {
-	display: table-row;
+	width: 100px;
 }
 
 .out div div>div.cell {
@@ -154,34 +152,31 @@ ul {
 
 .out div div>div.cell p {
 	position: relative;
-	top: 40%;
+	font-size: 14px;
+	top: 33px;
 	padding: 0 5px 0 0;
-	font-size: small;
 }
-
-
-.out div.table>div:first-child p {
-	top: 150%;
-}
-
 
 .out div.table>div:first-child+div  p {
-	top: 90%;
+	top: 73px;
 }
 
 .out div.table>div:first-child  {
-	height: 10.71%;
+	height: 160px;
 }
 
 .out div.table>div:first-child+div  {
-	height: 5.35%;
+	height: 120px;
 }
 
+.out div.table>div  {
+	height: 80px;
+}
 
 .out div.table>div:last-child  {
-	height: 5.35%;
+	height: 120px;
 }
-
+/* ---------------------------------------- */
 .week {
 	position: relative;
 	color: black;
@@ -294,22 +289,21 @@ ul {
 	background-size: cover;
 }
 
-@-moz-document url-prefix() {
-	
-	.out div.table>div:first-child  {
-		height: 10.71%;
+@-moz-document url-prefix() 
+
+{
+	.out div.table > div:first-child {
+	    height: 147px;
 	}
 
-	.out div.table>div:first-child+div  {
-		height: 5.35%;
-	}
+}
 
-
-	.out div.table>div:last-child  {
-		height: 5.35%;
-	}
-
-
+ 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    
+    .out div.table > div:first-child {
+			height: 143px;
+		}
 }
 
 
@@ -319,6 +313,9 @@ ul {
 @media screen and (orientation: portrait) { 
 
 
+	.content>table>div.row{
+		display: block;
+	}	
 
 	.out {
 		display: none;
